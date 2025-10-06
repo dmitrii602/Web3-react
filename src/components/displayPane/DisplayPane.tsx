@@ -1,6 +1,8 @@
+/* eslint-disable */
+
 import { useWeb3React } from "@web3-react/core";
-import { Divider, Typography } from "antd";
-const { Title } = Typography;
+import { Divider } from "antd";
+// const { Title } = Typography;
 
 import { useWindowSize } from "hooks";
 
@@ -46,7 +48,7 @@ const DisplayPane: React.FC<DisplayPaneProps> = ({ isDarkMode }) => {
         width: isTablet ? "90%" : "80%"
       }}
     >
-      <Title>Display Info</Title>
+
       <div style={styles.content}>
         <Status isActivating={isActivating} isActive={isActive} />
         <Infos chainId={chainId} />
